@@ -734,6 +734,11 @@ footer {
         /* Space for line */
     }
 
+    /* Fix for alignment of hidden projects on mobile */
+    .hidden-projects-wrapper.visible .timeline-item {
+        grid-template-columns: 1fr;
+    }
+
     .timeline-marker {
         left: -26px;
         /* Re-align marker with new line position */
