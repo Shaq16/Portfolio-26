@@ -737,6 +737,15 @@ footer {
     /* Fix for alignment of hidden projects on mobile */
     .hidden-projects-wrapper.visible .timeline-item {
         grid-template-columns: 1fr;
+        padding-left: 3rem;
+    }
+
+    .hidden-projects-wrapper.visible .timeline-content {
+        padding-left: 0;
+    }
+
+    .hidden-projects-wrapper.visible .timeline-marker {
+        left: -26px;
     }
 
     .timeline-marker {
