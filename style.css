@@ -446,6 +446,25 @@ footer {
     --hl-text-active: #fff;
 }
 
+/* Generic Highlight Colors */
+.highlight-term.yellow {
+    --hl-bg: #FCD34D;
+    --hl-text: #b45309;
+    --hl-text-active: #000;
+}
+
+.highlight-term.purple {
+    --hl-bg: #d8b4fe;
+    --hl-text: #7e22ce;
+    --hl-text-active: #000;
+}
+
+.highlight-term.blue {
+    --hl-bg: #0077b5;
+    --hl-text: #0077b5;
+    --hl-text-active: #fff;
+}
+
 .about-inline .about-links {
     margin-top: 0.5rem;
 }
