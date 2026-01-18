@@ -55,7 +55,7 @@ h4 {
 /* Floating Name Capsule */
 .floating-name {
     position: fixed;
-    top: 1.5rem;
+    top: 2rem;
     left: 50%;
     transform: translateX(-50%) scale(1);
     z-index: 1000;
