@@ -374,9 +374,26 @@ footer {
 
 /* Inline About Section (simple style) */
 .about-inline {
+    position: relative;
     max-width: 100%;
     margin: 0 0 4rem;
     padding-left: 350px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-profile-img {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
 }
 
 .about-inline p {
@@ -723,10 +740,22 @@ footer {
     .about-inline {
         padding-left: 0;
         margin-bottom: 3rem;
+        align-items: center;
+    }
+
+    .about-profile-img {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 2rem;
     }
 
     .about-inline p {
         font-size: 1.1rem;
+        text-align: center;
     }
 
     /* Experience Simple */
