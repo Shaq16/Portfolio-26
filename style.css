@@ -6,7 +6,7 @@
     --font-main: 'Rethink Sans', sans-serif;
 }
 
-/* Portfolio v1.1 - Force redeploy */
+/* Portfolio v2.0 - Cache bust redeploy */
 
 * {
     margin: 0;
