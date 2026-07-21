@@ -226,7 +226,7 @@ header.hidden {
 }
 
 .experience-title {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: var(--text-color);
@@ -238,17 +238,17 @@ header.hidden {
 }
 
 .experience-role {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     font-weight: 500;
     color: var(--accent-color);
 }
 
 .experience-desc {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     color: #444;
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 /* Timeline Item (Keeping mostly for Projects) */
@@ -320,7 +320,7 @@ header.hidden {
 }
 
 .content-title {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
     margin-bottom: 0.5rem;
     transition: color 0.3s ease;
@@ -338,17 +338,17 @@ header.hidden {
 }
 
 .content-desc {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     color: #444;
     margin-bottom: 1rem;
-    max-width: 700px;
-    line-height: 1.6;
+    max-width: 750px;
+    line-height: 1.65;
 }
 
 .content-links {
     margin-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 1.05rem;
     font-weight: 500;
 }
 
@@ -397,7 +397,7 @@ footer {
 }
 
 .about-inline p {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 400;
     line-height: 1.6;
     color: #444;
@@ -440,7 +440,8 @@ footer {
     /* Black text on yellow */
 }
 
-.highlight-term.mindvault {
+.highlight-term.mindvault,
+.highlight-term.kirinai {
     --hl-bg: #d8b4fe;
     /* Light Purple for better contrast with black text */
     --hl-text: #7e22ce;
@@ -754,7 +755,7 @@ footer {
     }
 
     .about-inline p {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         text-align: center;
     }
 
@@ -845,4 +846,41 @@ footer {
     .hero-text {
         font-size: 2rem;
     }
+}
+
+/* Form Success Message */
+.form-success-message {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.form-success-message .success-icon {
+    width: 48px;
+    height: 48px;
+    background-color: #2a9d8f;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.form-success-message h3 {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.form-success-message p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
 }

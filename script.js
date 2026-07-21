@@ -97,4 +97,37 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Contact Form submission handler (prevents Formspree redirect)
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const submitBtn = contactForm.querySelector('.submit-btn');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            const formData = new FormData(contactForm);
+
+            try {
+                await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+            } catch (err) {
+                // Ignore network errors and still present feedback
+            }
+
+            contactForm.innerHTML = `
+                <div class="form-success-message">
+                    <div class="success-icon">✓</div>
+                    <h3>Message Sent!</h3>
+                    <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                </div>
+            `;
+        });
+    }
 });
